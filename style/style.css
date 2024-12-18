@@ -1,5 +1,117 @@
-*{
-    margin : 0;
-    padding : 0;
+@font-face {
+    font-family: pnFont;
+    src: url(./eval1.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+}
+
+#midle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
+nav {
+    width: 18vw;
+    height: 100vh;
+    background-color: #000;
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+nav .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+nav .logo img {
+    width: 80%;
+}
+
+nav .titleNav {
+    color: #FFFF00;
+    font-family: pnFont;
+    text-align: center;
+    font-size: 1.6em;
+    margin: 10px 0 30px 0;
+}
+
+nav .button {
+    color: #FFFF00;
+    font-family: pnFont;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin: 20px 0;
+    padding: 15px 30px;
+    text-align: center;
+    border: 5px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+nav .button:hover {
+    border: 5px solid #FFFF00;
+    border-radius: 10px;
+    background-color: #2c2c2c;
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 3.5em;
+    padding-top: 2.5em;
+    max-width: 75vw;
+    min-width: 20vw;
+    left: 20vw;
+}
+
+main h1 {
+    color: #ff4800;
+    font-family: pnFont;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+/* Articles : texte agrandi et espacement ajusté */
+main article {
+    font-family: pnFont;
+    font-size: 1.4em; /* Légère réduction de la taille du texte */
+    box-shadow: 5px 5px 10px 0px black;
+    padding: 1.5em;
+    margin: 1em;
+    width: 70%;
+    line-height: 1.7; /* Légère réduction de l'espacement des lignes */
+    text-align: justify;
+}
+
+main img {
+    width: 35%; /* Taille des images réduite pour s'adapter aux paragraphes */
+    margin-left: 20px;
+}
+
+main .article1, main .article2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px; /* Espacement entre les articles */
 }
